@@ -8,7 +8,11 @@ title: "My second blog post"
 
 A second post
 
-This is a test of $$\int x dx$$
+This is a test of
+
+$$
+\int x dx
+$$
 
 is a really long post
 is a really long post

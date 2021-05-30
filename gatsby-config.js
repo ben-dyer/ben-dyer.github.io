@@ -29,7 +29,18 @@ module.exports = {
         // GitHub Flavored Markdown mode (default: true)
         gfm: true,
         // Plugins configs
-        plugins: [],
+        plugins: [
+          {
+            resolve: `gatsby-remark-katex`,
+            options: {
+              // Add any KaTeX options from https://github.com/KaTeX/KaTeX/blob/master/docs/options.md here
+              strict: `ignore`,
+              macros: {
+                "\\RR": "\\mathbb{R}",
+              },
+            },
+          },
+        ],
       },
     },
     `gatsby-transformer-sharp`,

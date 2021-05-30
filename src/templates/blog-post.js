@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet"
 import { graphql } from "gatsby"
 
 // import '../css/blog-post.css';
+require(`katex/dist/katex.min.css`)
 
 export default function Template({ data }) {
   const { markdownRemark: post } = data
